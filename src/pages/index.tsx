@@ -1,11 +1,13 @@
 import type { NextPage } from "next";
+import DeviceStrip from "../components/DeviceStrip";
+
 import Layout from "../components/layout";
 import VideoContainer from "../components/VideoContainer";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className="mt-12">
+      <div className="mt-12 flex flex-col items-center gap-4">
         <form onSubmit={() => {}} className="flex flex-col items-center gap-4">
           <input
             type="text"
@@ -23,6 +25,8 @@ const Home: NextPage = () => {
         <div className="mt-12 bg-white relative overflow-hidden rounded-lg">
           <VideoContainer />
         </div>
+
+        <DeviceStrip />
       </div>
     </Layout>
   );
