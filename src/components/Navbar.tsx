@@ -26,7 +26,7 @@ const NavItem: React.FC<{ href: string; text: string }> = ({ href, text }) => {
 
 const Navbar = () => {
   return (
-    <header className="w-full shadow-lg bg-blue max-w-2xl flex justify-between items-center mx-auto h-16 z-40 md:rounded-xl px-2">
+    <header className="w-full shadow-lg bg-blue max-w-2xl flex justify-between items-center mx-auto h-16 z-40 md:rounded-xl px-4">
       <div>
         <a
           className="text-2xl font-bold text-gray transition-colors lg:text-3xl"
