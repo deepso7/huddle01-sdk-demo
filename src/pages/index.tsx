@@ -8,7 +8,12 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className="mt-12 flex flex-col items-center gap-4">
-        <form onSubmit={() => {}} className="flex flex-col items-center gap-4">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+          className="flex flex-col items-center gap-4"
+        >
           <input
             type="text"
             placeholder="Room Name"
